@@ -21,6 +21,12 @@ class User(Base):
         default=uuid4,
     )
 
+    supabase_user_uuid: Mapped[UUID] = mapped_column(
+        PG_UUID(as_uuid=True),
+        unique=True,
+        nullable=False,
+    )
+
     organization_id: Mapped[UUID] = mapped_column(
         PG_UUID(as_uuid=True),
         ForeignKey("organizations.organization_id"),
@@ -41,11 +47,7 @@ class User(Base):
     email: Mapped[str] = mapped_column(
         String(255),
         nullable=False,
-    )
-
-    password_hash: Mapped[str] = mapped_column(
-        String(255),
-        nullable=False,
+        unique=True,
     )
 
     status: Mapped[str] = mapped_column(
