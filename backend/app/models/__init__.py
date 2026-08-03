@@ -1,8 +1,9 @@
-from app.models.organization import Organization
-from app.models.role import Role
-from app.models.permission import Permission
-from app.models.role_permission import RolePermission
-from app.models.user import User
+from .organization import Organization
+from .role import Role
+from .permission import Permission
+from .role_permission import RolePermission
+from .user import User
+from .warehouse import Warehouse
 
 __all__ = [
     "Organization",
@@ -10,4 +11,5 @@ __all__ = [
     "Permission",
     "RolePermission",
     "User",
+    "Warehouse",
 ]

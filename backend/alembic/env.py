@@ -12,6 +12,7 @@ from app.models.role import Role
 from app.models.permission import Permission
 from app.models.role_permission import RolePermission
 from app.models.user import User
+from app.models.warehouse import Warehouse
 
 target_metadata = Base.metadata
 
