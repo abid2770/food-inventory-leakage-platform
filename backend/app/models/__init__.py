@@ -7,6 +7,7 @@ from .warehouse import Warehouse
 from .unit import Unit
 from .category import Category
 from .supplier import Supplier
+from .customer import Customer
 
 __all__ = [
     "Organization",
@@ -18,4 +19,5 @@ __all__ = [
     "Unit",
     "Category",
     "Supplier",
+    "Customer",
 ]
