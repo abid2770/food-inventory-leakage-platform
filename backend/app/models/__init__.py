@@ -8,6 +8,7 @@ from .unit import Unit
 from .category import Category
 from .supplier import Supplier
 from .customer import Customer
+from app.models.reason import Reason
 
 __all__ = [
     "Organization",
@@ -20,4 +21,5 @@ __all__ = [
     "Category",
     "Supplier",
     "Customer",
+    "Reason",
 ]

@@ -18,6 +18,7 @@ from app.models.unit import Unit
 from app.models.category import Category
 from app.models.supplier import Supplier
 from app.models.customer import Customer
+from app.models.reason import Reason
 
 # Alembic Config object
 config = context.config
