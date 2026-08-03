@@ -1,7 +1,13 @@
 from uuid import UUID, uuid4
 from datetime import datetime
 
-from sqlalchemy import String, DateTime, ForeignKey, func
+from sqlalchemy import (
+    String,
+    DateTime,
+    ForeignKey,
+    UniqueConstraint,
+    func,
+)
 from sqlalchemy.dialects.postgresql import UUID as PG_UUID
 from sqlalchemy.orm import Mapped, mapped_column
 
@@ -72,7 +78,16 @@ class Reason(Base):
     )
 
     __table_args__ = (
+        UniqueConstraint(
+            "organization_id",
+            "reason_name",
+            "reason_type",
+            name="uq_reason_org_name_type",
+        ),
         {
-            "comment": "Master table for business reasons such as stock adjustments, production waste, returns, and inventory corrections."
+            "comment": (
+                "Master table for business reasons such as stock adjustments, "
+                "production waste, returns, and inventory corrections."
+            )
         },
     )
