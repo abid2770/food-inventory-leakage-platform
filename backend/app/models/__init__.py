@@ -4,8 +4,9 @@ from .permission import Permission
 from .role_permission import RolePermission
 from .user import User
 from .warehouse import Warehouse
-from app.models.unit import Unit
-from app.models.category import Category
+from .unit import Unit
+from .category import Category
+from .supplier import Supplier
 
 __all__ = [
     "Organization",
@@ -14,4 +15,7 @@ __all__ = [
     "RolePermission",
     "User",
     "Warehouse",
+    "Unit",
+    "Category",
+    "Supplier",
 ]

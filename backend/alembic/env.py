@@ -2,19 +2,21 @@ from logging.config import fileConfig
 
 from alembic import context
 from sqlalchemy import pool
-from sqlalchemy.engine import make_url
 from sqlalchemy.ext.asyncio import create_async_engine
 
 from app.core.config import settings
 from app.database.base import Base
+
+# Import all models so Alembic can detect them
 from app.models.organization import Organization
 from app.models.role import Role
 from app.models.permission import Permission
 from app.models.role_permission import RolePermission
 from app.models.user import User
 from app.models.warehouse import Warehouse
-
-target_metadata = Base.metadata
+from app.models.unit import Unit
+from app.models.category import Category
+from app.models.supplier import Supplier
 
 # Alembic Config object
 config = context.config
@@ -23,7 +25,7 @@ config = context.config
 if config.config_file_name is not None:
     fileConfig(config.config_file_name)
 
-# Import all models so Alembic can detect them
+# SQLAlchemy metadata
 target_metadata = Base.metadata
 
 
