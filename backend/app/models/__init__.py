@@ -11,6 +11,7 @@ from .customer import Customer
 from .reason import Reason
 from .product import Product
 from .bom import BOM
+from .bom_item import BOMItem
 
 __all__ = [
     "Organization",
@@ -26,4 +27,5 @@ __all__ = [
     "Reason",
     "Product",
     "BOM",
+    "BOMItem",
 ]
