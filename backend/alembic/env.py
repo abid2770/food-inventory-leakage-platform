@@ -20,6 +20,7 @@ from app.models.supplier import Supplier
 from app.models.customer import Customer
 from app.models.reason import Reason
 from app.models.product import Product
+from app.models.bom import BOM
 
 # Alembic Config object
 config = context.config

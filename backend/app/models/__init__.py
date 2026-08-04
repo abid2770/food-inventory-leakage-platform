@@ -10,6 +10,7 @@ from .supplier import Supplier
 from .customer import Customer
 from .reason import Reason
 from .product import Product
+from .bom import BOM
 
 __all__ = [
     "Organization",
@@ -24,4 +25,5 @@ __all__ = [
     "Customer",
     "Reason",
     "Product",
+    "BOM",
 ]
