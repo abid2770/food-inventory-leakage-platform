@@ -12,6 +12,7 @@ from .reason import Reason
 from .product import Product
 from .bom import BOM
 from .bom_item import BOMItem
+from .stock_transaction import StockTransaction
 
 __all__ = [
     "Organization",
@@ -28,4 +29,5 @@ __all__ = [
     "Product",
     "BOM",
     "BOMItem",
+    "StockTransaction",
 ]
