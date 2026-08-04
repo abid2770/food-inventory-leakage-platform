@@ -13,6 +13,7 @@ from .product import Product
 from .bom import BOM
 from .bom_item import BOMItem
 from .stock_transaction import StockTransaction
+from .stock_balance import StockBalance
 
 __all__ = [
     "Organization",
@@ -30,4 +31,5 @@ __all__ = [
     "BOM",
     "BOMItem",
     "StockTransaction",
+    "StockBalance",
 ]

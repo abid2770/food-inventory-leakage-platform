@@ -23,6 +23,7 @@ from app.models.product import Product
 from app.models.bom import BOM
 from app.models.bom_item import BOMItem
 from app.models.stock_transaction import StockTransaction
+from app.models.stock_balance import StockBalance
 
 # Alembic Config object
 config = context.config
