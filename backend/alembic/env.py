@@ -25,6 +25,7 @@ from app.models.bom_item import BOMItem
 from app.models.stock_transaction import StockTransaction
 from app.models.stock_balance import StockBalance
 from app.models.production_order import ProductionOrder
+from app.models.production_order_item import ProductionOrderItem
 
 # Alembic Config object
 config = context.config

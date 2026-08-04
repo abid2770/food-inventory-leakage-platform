@@ -15,6 +15,7 @@ from .bom_item import BOMItem
 from .stock_transaction import StockTransaction
 from .stock_balance import StockBalance
 from .production_order import ProductionOrder
+from .production_order_item import ProductionOrderItem
 
 __all__ = [
     "Organization",
@@ -34,4 +35,5 @@ __all__ = [
     "StockTransaction",
     "StockBalance",
     "ProductionOrder",
+    "ProductionOrderItem",
 ]
